@@ -4,9 +4,8 @@
 
         var $this = this;
         onInit();
-        $(".tab-header").on("click", function(){
-           onHeaderClick();
-        });
+        onHeaderClick();
+
 
 
         /**
@@ -40,10 +39,18 @@
          * This function is called when tab-header is clicked;
         **/
         function onHeaderClick(){
-          alert("AAAAH")
 
-    		
+          $(".tab-header").on("click", function(){
+      			var index = $(this).index() + 1;
+      			var selectedTab = $('.contentTabs--content').find("[data-slide='" + index + "']");
 
+            console.log(index)
+            //$('.tab-header').removeClass('active');
+            $(this).addClass("active")
+      			$(this).toggleClass('active');
+
+      			$(selectedTab).addClass('active');
+          });
 
       }
 

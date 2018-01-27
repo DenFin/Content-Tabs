@@ -1,8 +1,8 @@
 #contentTabs
   background: #eee
   border: $primaryColor 3px solid
-  width: 70%
-  min-height: 400px
+  width: 100%
+  //min-height: 400px
 
   .contentTabs--header
     display: flex
@@ -26,7 +26,7 @@
       &:last-of-type
         border-right: none
 
-    &.active
+    .active
       background: $primaryColor
       color: #eee
       &:hover
@@ -39,5 +39,5 @@
 
       h2
         margin-top: 0
-    &.active
+    .active
       display: block

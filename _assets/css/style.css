@@ -46,6 +46,39 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1280px) {
   .container {
     max-width: 750px; } }
+#contentTabs {
+  background: #eee;
+  border: #3b4954 3px solid;
+  width: 100%; }
+  #contentTabs .contentTabs--header {
+    display: flex;
+    flex-wrap: auto; }
+    #contentTabs .contentTabs--header .tab-header {
+      border-right: #3b4954 3px solid;
+      border-bottom: #3b4954 3px solid;
+      cursor: pointer;
+      display: inline-block;
+      padding: 1.6rem 3.2rem;
+      flex-basis: 0;
+      flex-grow: 1;
+      transition: all 0.15s ease; }
+      #contentTabs .contentTabs--header .tab-header:hover {
+        background: #bdc8d1; }
+      #contentTabs .contentTabs--header .tab-header:last-of-type {
+        border-right: none; }
+    #contentTabs .contentTabs--header .active {
+      background: #3b4954;
+      color: #eee; }
+      #contentTabs .contentTabs--header .active:hover {
+        background: #506372; }
+  #contentTabs .contentTabs--content .tab-content {
+    display: none;
+    padding: 3.2rem; }
+    #contentTabs .contentTabs--content .tab-content h2 {
+      margin-top: 0; }
+  #contentTabs .contentTabs--content .active {
+    display: block; }
+
 header {
   position: absolute;
   top: 0;
