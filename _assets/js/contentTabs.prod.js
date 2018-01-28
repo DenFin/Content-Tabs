@@ -13,14 +13,16 @@
          * This function does some actions on initializing
          * It checks how many tab-header and tab-content items there are.
          * It adds a class of active to the first tab-header and tab-content.
+         * If the amount of header and content item don't match
+         * it returns an error message to the console.
         **/
         function onInit(){
 
           var tabHeaderAmount = $this.children().children(".tab-header").length;
-          console.log(tabHeaderAmount);
+          console.log(".tab-header elements: " + tabHeaderAmount);
 
           var tabContentAmount =  $this.children().children(".tab-content").length;
-          console.log(tabContentAmount);
+          console.log(".tab-content elements: " + tabContentAmount);
 
           if(!(tabHeaderAmount === tabContentAmount)){
             console.log("You have " + tabHeaderAmount + " tab-header items and " + tabContentAmount + " tab-content items. Make sure there is an equal amount of both.")
