@@ -47,12 +47,12 @@
         <h1>Demonstration</h1>
         <div id="contentTabs">
           <div class="contentTabs--header">
-            <div class="tab-header">Design</div>
+            <div class="tab-header active">Design</div>
             <div class="tab-header">Coding</div>
             <div class="tab-header">Music</div>
           </div>
           <div class="contentTabs--content">
-            <div class="tab-content">
+            <div class="tab-content active">
               <strong>Everybody is a designer</strong>
               <p>
                 I like to believe that my career in design is strongly related to my early passion for skateboarding. Because of skateboarding we started filming our crazy stunts and editing videos.
@@ -76,13 +76,27 @@
     <section id="usage" class="panel">
       <div class="container">
         <h1>Basic usage</h1>
-        <p>How...</p>
+        <p>In order for content tabs to work you need to setup your HTML like in the example below. Link the accordion.css and call the function contentTabs(); on the parent element of your tabs.</p>
         <ol>
           <li>Link CSS and JS File</li>
           <li>Setup your markup</li>
           <li>Assing function to parent element</li>
         </ol>
+        <strong>Setup HTML</strong>
+        <pre>
+          <code class="language-js">
+$("#contentTabs").contentTabs();
+          </code>
+        </pre>
+        <br>
         <strong>Link CSS and JS File</strong>
+        <pre>
+          <code class="language-js">
+$("#contentTabs").contentTabs();
+          </code>
+        </pre>
+        <br>
+        <strong>Call function on parent element</strong>
         <pre>
           <code class="language-js">
 $("#contentTabs").contentTabs();
@@ -90,6 +104,11 @@ $("#contentTabs").contentTabs();
         </pre>
       </div>
     </section>
+    <footer id="footer" class="panel">
+      <div class="container">
+        <strong>Content Tabs</strong>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

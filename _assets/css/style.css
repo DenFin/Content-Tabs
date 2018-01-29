@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   .container {
     max-width: 750px; } }
 #contentTabs {
-  background: #eee;
+  background: #fff;
   border: #3b4954 3px solid;
   width: 100%; }
   #contentTabs .contentTabs--header {
@@ -127,6 +127,12 @@ header {
     max-width: 560px;
     margin: 0 auto; }
 
-/** Test branch */
+#demonstration {
+  background: rgba(0, 0, 0, 0.05); }
+
+#footer {
+  background: #3b4954; }
+  #footer strong {
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
