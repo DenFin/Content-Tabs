@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: 95%;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .panel {
@@ -112,6 +113,7 @@ header {
 
 #intro {
   background-image: url("../img/introBG.jpg");
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #fff;
