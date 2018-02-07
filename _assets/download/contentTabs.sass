@@ -1,0 +1,43 @@
+#contentTabs
+  background: #fff
+  border: $primaryColor 3px solid
+  width: 100%
+  //min-height: 400px
+
+  .contentTabs--header
+    display: flex
+    flex-wrap: auto
+    .tab-header
+      border-right: $primaryColor 3px solid
+      border-bottom: $primaryColor 3px solid
+      cursor: pointer
+      display: inline-block
+      padding: 1.6rem 3.2rem
+      flex-basis: 0
+      flex-grow: 1
+      transition: all .15s ease
+      &:hover
+        background: lighten($primaryColor, 50%)
+        // padding-left: 6rem
+      span
+        // color: $primaryColor
+        // font:
+        //   weight: bold
+      &:last-of-type
+        border-right: none
+
+    .active
+      background: $primaryColor
+      color: #eee
+      &:hover
+        background: lighten($primaryColor, 10%)
+
+  .contentTabs--content
+    .tab-content
+      display: none
+      padding: 3.2rem
+
+      h2
+        margin-top: 0
+    .active
+      display: block
