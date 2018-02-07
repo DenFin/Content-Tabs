@@ -15,8 +15,8 @@
         </figure>
         <nav>
           <ul>
-            <li><a href="">Getting Started</a></li>
-            <li><a href="">Documentation</a></li>
+            <li><a href="#usage">Getting Started</a></li>
+            <li><a target="_blank" href="https://github.com/DenFin/Content-Tabs">GitHub</a></li>
           </ul>
         </nav>
       </div>
@@ -27,7 +27,8 @@
         <p>
           Content Tabs is a small & lightweight jQuery Plugin <br> for creating beautiful content tabs.
         </p>
-        <button type="button" name="button">Learn more</button>
+        <a class="btn" href="#description"><button type="button" name="button">Learn more</button></a>
+        <a class="btn btn-download" href="#description"><button type="button" name="button">Download</button></a>
         <!-- <figure>
           <img src="_assets/img/screenshot.png" alt="">
         </figure> -->
@@ -83,22 +84,35 @@
         <h1>Basic usage</h1>
         <p>In order for content tabs to work you need to setup your HTML like in the example below. Link the accordion.css and call the function contentTabs(); on the parent element of your tabs.</p>
         <ol>
-          <li>Link CSS and JS File</li>
-          <li>Setup your markup</li>
-          <li>Assing function to parent element</li>
+          <li>Setup HTML</li>
+          <li>Link CSS, JS and jQuery</li>
+          <li>Call function on parent element</li>
         </ol>
         <strong>Setup HTML</strong>
-        <pre>
-          <code class="language-js">
-$("#contentTabs").contentTabs();
-          </code>
+        <pre class="language-markup">
+          <code><!--
+<div id="contentTabs">
+  <div class="contentTabs--header">
+    <div class="tab-header active">Design</div>
+    <div class="tab-header">Coding</div>
+  </div>
+  <div class="contentTabs--content">
+    <div class="tab-content active">
+    </div>
+    <div class="tab-content">
+    </div>
+  </div>
+</div>
+      --></code>
         </pre>
         <br>
-        <strong>Link CSS and JS File</strong>
-        <pre>
-          <code class="language-js">
-$("#contentTabs").contentTabs();
-          </code>
+        <strong>Link CSS, JS and jQuery</strong>
+        <pre class="language-markup">
+          <code><!--
+<link rel="stylesheet" href="path/to/contentTabs.css">
+<script type="text/javascript" src="path/to/jQuery.js"></script>
+<script type="text/javascript" src="path/to/contentTabs.js"></script>
+          --></code>
         </pre>
         <br>
         <strong>Call function on parent element</strong>

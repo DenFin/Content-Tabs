@@ -36,6 +36,28 @@ h1, h2, h3, h4, h5, h6 {
   color: #303030;
   line-height: 1; }
 
+a.btn button {
+  background: #3b4954;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.6rem 1.8rem;
+  font-size: inherit;
+  font-weight: 700;
+  transition: all 0.15s ease; }
+  a.btn button:focus {
+    outline: none; }
+a.btn:hover button {
+  background: #506372; }
+
+a.btn-download button {
+  background: #665c63; }
+a.btn-download:hover button {
+  background: #81747d; }
+
+pre {
+  font-size: 1.4rem; }
+
 .container {
   width: 95%;
   max-width: 1000px;
