@@ -102,11 +102,50 @@ pre {
   #contentTabs .contentTabs--content .active {
     display: block; }
 
+#df_global_header {
+  position: static;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.735);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  z-index: 3; }
+  #df_global_header.scroll {
+    transform: translateY(-100%); }
+  #df_global_header .container {
+    display: flex;
+    justify-content: space-between; }
+  #df_global_header .logo {
+    max-width: 100px;
+    margin: 1rem 0; }
+    #df_global_header .logo img {
+      width: 100px; }
+  #df_global_header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  #df_global_header nav li {
+    display: inline-block; }
+  #df_global_header nav a {
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0; }
+  #df_global_header nav a {
+    color: inherit;
+    font-size: 1.2rem; }
+
+main {
+  position: relative; }
+
 header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   header .container {
     display: flex;
     justify-content: space-between;
@@ -142,7 +181,8 @@ header {
   text-align: center;
   min-height: 300px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   #intro h1 {
     color: #FFF;
     font-size: 4.8rem;

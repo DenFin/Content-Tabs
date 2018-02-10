@@ -2,3 +2,15 @@
   margin: 0
   padding: 0
   list-style: none
+
+@mixin horizontal-nav($padding)
+  ul
+    +reset-ul
+  li
+    display: inline-block
+  a
+    font-weight: 500
+    display: block
+    text-decoration: none
+    padding: $padding
+    margin: 0
